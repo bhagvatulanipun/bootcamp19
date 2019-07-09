@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                    echo "hello"
+                   currentBuild.result = 'FAILED'
             }
         }
     }
